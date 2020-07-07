@@ -1,5 +1,13 @@
-body {
+.auth-window {
     background-color: #94B7E3;
+}
+
+.auth-window-form {
+    background-color: #00224E;
+}
+
+.login-form {
+    background-color: white
 }
 
 .header {
