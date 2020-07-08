@@ -3,13 +3,98 @@
 }
 
 .auth-window-form {
-    background-color: #00224E;
+    margin: 0 auto;
+    width: 1280px;
+    height: 700px;
+    background: linear-gradient(180deg, #00224E 0%, #416695 100%);
+    border-radius: 30px;
 }
+
+
+.main-header {
+    position: absolute;
+    width: 450px;
+    height: 34px;
+    left: 87px;
+    top: 227px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.main-header b {
+    font-weight: bold;
+}
+
+.subheader {
+    position: absolute;
+    width: 196px;
+    height: 13px;
+    left: 93px;
+    top: 298px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
 
 .login-form {
-    background-color: white
+    width: 350px;
+    height: 530px;
+    margin-left: 222px;
+    margin-top: 66px;
+
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.header {
-    padding: 10px;
+.logo {
+    position: relative;
+    left: 35px;
+    top: 20px;
+}
+
+form {
+    position: relative;
+    left: 35px;
+    top: 142px;
+}
+
+.login-form-element {
+    margin-bottom: 48px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding-top: 14.25px;
+    width: 280px;
+    height: 48px;
+    background: linear-gradient(90deg, rgba(255, 105, 97, 0.8) 0%, rgba(255, 141, 41, 0.8) 100%);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.submit-button-text {
+    margin-top: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
 }
