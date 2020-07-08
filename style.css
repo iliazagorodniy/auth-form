@@ -70,6 +70,7 @@
 }
 
 form {
+    width: 280px;
     position: relative;
     left: 35px;
     top: 142px;
@@ -78,6 +79,7 @@ form {
 .login-form-element {
     margin-bottom: 48px;
 }
+
 
 .submit-button {
     margin-top: 20px;
@@ -97,4 +99,61 @@ form {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+}
+
+input[type="password"], input[type="email"] {
+    width: 100%;
+    border: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-top: 4px;
+
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    /* Gray 4 */
+
+    color: #BDBDBD;
+}
+
+input::placeholder {
+    color: #BDBDBD;
+}
+
+input:hover, input:hover::placeholder {
+    border-color: #416695;
+    color: #416695;
+}
+
+input:focus, input:focus::placeholder {
+    color: #00224E;
+    border-color: #00224E;
+}
+
+label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+}
+
+input:focus + label {
+    color: #00224E;
+}
+
+input:hover + label {
+    color: #416695;
+}
+
+.email-label {
+    
 }
