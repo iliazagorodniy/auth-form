@@ -64,16 +64,20 @@
 }
 
 .logo {
-    position: relative;
-    left: 35px;
-    top: 20px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
 form {
     width: 280px;
-    position: relative;
-    left: 35px;
-    top: 142px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 142px
+}
+
+.login-form-element:last-child {
+    margin-bottom: 0px;
 }
 
 .login-form-element {
