@@ -231,11 +231,7 @@ a:hover {
 }
 
 .background-img {
-    position: fixed;
-}
-
-img {
-    position: fixed;
+    position: absolute;
 }
 
 .auth-window-form img:nth-child(2) {
