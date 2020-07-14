@@ -3,11 +3,14 @@
 }
 
 .auth-window-form {
+    overflow: hidden;
     margin: 0 auto;
     width: 1280px;
     height: 700px;
     background: linear-gradient(180deg, #00224E 0%, #416695 100%);
     border-radius: 30px;
+
+    transition: width 500ms;
 }
 
 
@@ -61,6 +64,8 @@
     border-radius: 6px;
     background-color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+    transition: margin-left,  500ms;
 }
 
 .logo {
@@ -262,4 +267,26 @@ padding-left: 599px;
 
 .auth-window-form img:nth-child(9) {
     padding-top: 574px;
+    width: 1280px;
+    transition: width 500ms;
+}
+
+@media only screen and (max-width: 1300px) {
+    .auth-window-form {
+        width: 990px;
+        transition: width 500ms;
+    }
+
+    .login-form {
+        margin-left: 90px;
+        margin-top: 66px;
+        transition: margin-left,  500ms;
+    }
+
+    .auth-window-form img:nth-child(9) {
+        width: 990px;
+        border-radius: 30px;
+        padding-top: 603px;
+        transition: width 500ms;
+    }
 }
