@@ -16,17 +16,16 @@
 
 .main-header {
     position: absolute;
-    width: 450px;
+    width: 500px;
     height: 34px;
     left: 87px;
     top: 227px;
-
+    display: flex;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
     font-size: 48px;
     line-height: 59px;
-    display: flex;
     align-items: center;
 
     color: #FFFFFF;
@@ -65,7 +64,7 @@
     background-color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 
-    transition: margin-left,  500ms;
+    transition: margin-left, 500ms;
 }
 
 .logo {
@@ -121,7 +120,7 @@ form {
     box-shadow: inset 4px 4px 10px rgba(132, 74, 24, 0.75), inset -4px -4px 8px rgba(255, 255, 255, 0.75);
 }
 
-*{
+* {
     outline: none !important;
 }
 
@@ -192,8 +191,7 @@ label {
 }
 
 a {
-    position: absolute;
-    margin-left: 159px;
+    float: right;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -220,54 +218,66 @@ a:hover {
     vertical-align: middle;
 }
 
-.login-form-element-checkbox input:hover + label{
+.login-form-element-checkbox input:hover + label {
     color: #416695;
 }
 
-.top-left-orange {
+.images-container {
     position: absolute;
-    width: 310px;
-    height: 258px;
-    left: -12px;
-    top: 235px;
-
-    background: linear-gradient(130.58deg, #FF6961 7.09%, #FF8D29 91.33%);
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
-.background-img {
+.images-container img {
     position: absolute;
 }
 
-.auth-window-form img:nth-child(2) {
-padding-left: 379px;
+.circle-huge {
+    top: -165px;
+    transition: top, left 500ms;
 }
 
-.auth-window-form img:nth-child(4) {
-    padding-top: 404px;
+.circle-medium {
+    padding-left: 379px;
+    transition: top, padding-left 500ms;
 }
 
-.auth-window-form img:nth-child(5) {
-padding-left: 568px;
+.line-checked {
+    padding-top: 390px;
+    transition: z-index, padding-top ease-out 1000ms;
 }
 
-.auth-window-form img:nth-child(6) {
-padding-left: 599px;
+.meteor-huge {
+    padding-left: 568px;
+    transition: padding-left 500ms;
 }
 
-.auth-window-form img:nth-child(7) {
+.meteor-small {
+    padding-left: 599px;
+    transition: padding-left 500ms;
+}
+
+.meteor-small-left {
     padding-top: 3px;
     padding-left: 758px;
+    transition: padding-left 500ms;
 }
 
-.auth-window-form img:nth-child(8) {
-    padding-top: 331px;
-    padding-left: 718px;
+.top-left-orange-adaptive {
+    opacity: 0;
+    transition: opacity 250ms;
 }
 
-.auth-window-form img:nth-child(9) {
-    padding-top: 574px;
+.footer {
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    height: 126px;
+    margin-top: 574px;
+    position: absolute;
     width: 1280px;
+
     transition: width 500ms;
 }
 
@@ -280,13 +290,109 @@ padding-left: 599px;
     .login-form {
         margin-left: 90px;
         margin-top: 66px;
-        transition: margin-left,  500ms;
+        transition: margin-left, 500ms;
     }
 
-    .auth-window-form img:nth-child(9) {
+    .footer {
         width: 990px;
-        border-radius: 30px;
-        padding-top: 603px;
         transition: width 500ms;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+    .auth-window-form {
+        background: linear-gradient(90deg, #00224E 0%, #416695 100%);
+        width: 700px;
+        height: 1030px;
+        transition: width 500ms;
+    }
+
+    .line-checked {
+        left: -10px;
+        padding-top: 54px;
+        z-index: 9;
+    }
+
+    .circle-huge {
+        transform: rotate(-90deg);
+        top: -392px;
+        left: -165px;
+
+        transition: top, left 500ms;
+    }
+
+    .circle-medium {
+        transform: rotate(-90deg);
+        padding-left: 40px;
+        top: -100px;
+    }
+
+    .meteor-small {
+        padding-left: 350px;
+    }
+
+    .meteor-small-left {
+        padding-left: 510px;
+        z-index: 10;
+    }
+
+    .meteor-huge {
+        padding-left: 320px;
+    }
+
+    .top-left-orange {
+        display: none;
+    }
+
+    .top-left-orange-adaptive {
+        opacity: 1;
+        padding-top: 202px;
+    }
+
+    .header-column {
+        height: 500px;
+    }
+
+    .main-header {
+        height: 94px;
+        width: 275px;
+        left: 127px;
+        top: 140px;
+        display: block;
+    }
+
+    .subheader {
+        left: 133px;
+        top: 280px;
+    }
+
+    .login-form {
+        margin-left: unset;
+        margin-top: unset;
+        border-radius: unset;
+        width: unset;
+    }
+
+    .logo {
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+
+    form {
+        width: 500px;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 172px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .footer {
+        width: 0px;
+        transition: width 500ms;
+        opacity: 0;
+    }
+
 }
