@@ -63,6 +63,7 @@
     border-radius: 6px;
     background-color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
 
     transition: margin-left, 500ms;
 }
@@ -82,7 +83,8 @@ form {
 
 .login-form-element-checkbox {
     height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: -30px;
 }
 
 .login-form-element {
@@ -273,12 +275,18 @@ a:hover {
 .footer {
     border-radius: 0 0 30px 30px;
     overflow: hidden;
-    height: 126px;
-    margin-top: 574px;
+    margin-top: 505px;
     position: absolute;
     width: 1280px;
-
+    height: 195px;
     transition: width 500ms;
+}
+
+.footer img {
+    position: absolute;
+    bottom: 0;
+
+    transition: margin-left 450ms;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -296,6 +304,18 @@ a:hover {
     .footer {
         width: 990px;
         transition: width 500ms;
+    }
+
+    .sea-bottom {
+        margin-left: -40px;
+    }
+
+    .sea-middle {
+        margin-left: -140px;
+    }
+
+    .sea-top {
+        margin-left: -240px;
     }
 }
 
