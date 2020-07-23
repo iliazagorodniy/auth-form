@@ -32,39 +32,43 @@
 
 
             <div class="ui grid">
+
                 <div class="eight wide column header-column">
                     <header class="main-header">
                         <span>Вход в&#8194;</span><br><b>КСА МТОР </b>
                     </header>
                     <header class="subheader">Зайдите в свой аккаунт</header>
                 </div>
+
                 <div class="eight wide column form-column">
                     <div class="login-form">
-
                         <div class="logo">
                             <img src="./img/logo.svg" alt="логотип кса-МТОР">
                         </div>
 
-                        <form action="">
+                        <form action="check.php" method="post">
+
                             <div class="login-form-element">
-                                <input type="email" placeholder="user1234@mail.ru" id="inputEmail">
+                                <input type="email" placeholder="user1234@mail.ru" id="inputEmail" name="email">
                                 <label for="inputEmail" class="email-label">Логин:</label>
                             </div>
 
                             <div class="login-form-element">
-                                <input type="password"  placeholder="******************" id="inputPass">
+                                <input type="password"  placeholder="Введите пароль" id="inputPass" name="pass">
                                 <label for="inputPass">Пароль:</label>
                             </div>
 
                             <div class="login-form-element-checkbox">
                                 <a>Забыли пароль?</a>
                             </div>
+
                             <button class="submit-button">
                                 <span class="submit-button-text">Войти</span>
                             </button>
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
